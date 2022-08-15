@@ -33,6 +33,7 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.6s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -49,5 +50,17 @@ body {
 }
 
 .navbar ul li a:hover {
+    color: rgb(13, 121, 184);
+}
+
+.navbar.active {
+    background-color: black;
+}
+
+.navbar.active ul li a {
+    color: white;
+}
+
+.navbar.active ul li a:hover {
     color: rgb(13, 121, 184);
 }
